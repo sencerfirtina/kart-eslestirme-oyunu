@@ -91,6 +91,8 @@ class Oyun():
             self.menu_canvas.create_image(tilki_x,tilki_y,image=frame,tags="tilki")
             tilki_adim += 1
 
+            frame_idx = (frame_idx + 1) % 5
+
             if tilki_adim >= 22:
                 yon = "sag" if yon == "sol" else "sol"
                 tilki_adim = 0
